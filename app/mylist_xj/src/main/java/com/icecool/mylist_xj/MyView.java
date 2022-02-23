@@ -83,20 +83,20 @@ public class MyView extends LinearLayout {
 
 
     public void setmanager(int orientation,int spanCount ) {
-<<<<<<< HEAD
+
         this.manager = new GridLayoutManager(context,spanCount);// 设置布局管理器
         this.manager.setOrientation(orientation);
         this.recycler.setLayoutManager(manager);
-=======
+
         manager = new GridLayoutManager(context,spanCount);// 设置布局管理器
         manager.setOrientation(orientation);
         recycler.setLayoutManager(manager);
->>>>>>> d9ab1257eb9b9a2a3cf41f7466238964e0ca9af2
+
         LayoutParams linearParams =(LayoutParams) recycler.getLayoutParams();
         linearParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
     }
 
-<<<<<<< HEAD
+
     public void addData(String title,String link){
         this.datalist.add(new info_xianji(title,link));
         this.myadapter.notifyDataSetChanged();
@@ -107,8 +107,7 @@ public class MyView extends LinearLayout {
         this.myadapter.notifyDataSetChanged();
     }
 
-=======
->>>>>>> d9ab1257eb9b9a2a3cf41f7466238964e0ca9af2
+
     public void MoveToPosition(int position) {//滚动到指定位置
         recycler.smoothScrollToPosition(position);
     }
